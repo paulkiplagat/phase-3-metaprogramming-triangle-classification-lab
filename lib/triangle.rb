@@ -32,4 +32,4 @@ class TriangleError < StandardError
 end
 
 end
-Footer
+
