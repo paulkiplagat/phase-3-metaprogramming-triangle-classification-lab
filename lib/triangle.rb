@@ -24,3 +24,12 @@ end
 def valid_triangle_inequality?
   a + b > c && a + c > b && b + c > a
 end
+def validate_triangle
+  raise TriangleError unless sides_greater_than_zero? && valid_triangle_inequality?
+end
+
+class TriangleError < StandardError
+end
+
+end
+Footer
