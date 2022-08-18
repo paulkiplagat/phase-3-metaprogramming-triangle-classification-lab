@@ -17,3 +17,10 @@ def kind
     :scalene
   end
 end
+def sides_greater_than_zero?
+  [a, b, c].all?(&:positive?)
+end
+
+def valid_triangle_inequality?
+  a + b > c && a + c > b && b + c > a
+end
